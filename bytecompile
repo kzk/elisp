@@ -1,0 +1,8 @@
+if test "$1" = ""; then
+  echo "Bytecompiling All"
+  find . | grep elc$ | xargs rm -f
+  find . | grep el$  | xargs emacs -batch -no-site-file -q -f batch-byte-compile
+else
+  echo "Bytecompiling File: $1"
+  emacs -batch -no-site-file -q -f batch-byte-compile $1
+fi
