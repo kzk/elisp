@@ -8,6 +8,10 @@
 (set-clipboard-coding-system 'utf-8)
 
 ;----------------------------------------- load el files -----------------------------------------
+(setq-default indent-tabs-mode nil)
+(setq-default tab-width 2)
+(setq tab-width 2)
+
 (load "~/elisp/japanese-env")
 (load "~/elisp/x-window-system")
 (load "~/elisp/fonts")
@@ -125,8 +129,6 @@
                   (basic-save-buffer))))))
 
 (put 'upcase-region 'disabled nil)
-
-(setq-default indent-tabs-mode nil)
 
 (defun other-window-backward ()
   "Select the previous window."

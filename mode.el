@@ -20,6 +20,8 @@
 	 ;;;_+ C
 	 ("\\.c$"          . c-mode)
 	 ("\\.h$"          . c++-mode)
+         ;;;_+ Go
+	 ("\\.go$"         . go-mode)
 	 ;;;_+ C++
 	 ("\\.cpp$"        . c++-mode)
 	 ;;;_+ CSS
@@ -98,6 +100,9 @@
   (setq indent-tabs-mode nil)
   (setq c-basic-offset 2))
 (add-hook 'java-mode-hook 'my-java-mode-hook)
+
+;;;_ + go-mode
+(autoload 'go-mode "~/elisp/m/go-mode/go-mode")
 
 ;;;_ + clojure-mode
 (autoload 'clojure-mode "~/elisp/m/clojure-mode/clojure-mode")
