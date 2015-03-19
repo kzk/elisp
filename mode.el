@@ -40,6 +40,7 @@
 	 ("\\.htm$"        . sgml-mode)
 	 ("\\.html?$"      . sgml-mode)
 	 ("\\.shtml$"      . sgml-mode)
+	 ("\\.erb$"        . sgml-mode)
 	 ;;;_+ Java
 	 ("\\.java$"       . java-mode)
 	 ;;;_+ LiLFeS
